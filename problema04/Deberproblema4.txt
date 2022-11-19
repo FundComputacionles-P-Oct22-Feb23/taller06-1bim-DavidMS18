@@ -1,0 +1,39 @@
+1. Incio
+2. nombre, x(20) [{a-z},{A-Z}, {BS}]
+3. posicionJuego, x(10) [{a-z},{A-Z}, {BS}]
+4. edad, i[0,n]
+5. Estatura, d[0,n]
+6. edadTotal, i[0,n]
+7. totalEdad, i [0,n] <-- 0
+8. estatura, d[0,n]
+9. totalEstatura, d[0,n] <-- 0
+10. promedioEdad, i[0,n]
+11. promedioEstatura, d[0,n]
+12. bandera, 1 <-- true
+13. opcion, x(1) [{a-z}]
+14. mensaje, x(500) [{a-z}, {A-Z}, {BS}] mensaje <-- " "
+15. contador <-- 1
+
+16. Mientras bandera == true entonces
+17. Escribir "Ingrese el nombre del jugador:
+18. Imprimir nombre
+19. Escribir "Ingrese la posicion en el campo: 
+20. Imprimir posicionJuego
+21. Escribir "Ingrese la edad del jugador: " 
+22. Imprimir edad
+23. Escribir "Ingrese la estatura del jugador: "
+24. Imprimir estatura
+25. totalEdad <-- totalEdad + edad
+26. totalEstatura <-- totalEstatura + estatura
+27. mensaje <-- mensaje + contador + ". " + nombre + " - " + posicionJuego + "-, edad " + edad + ", estatura " + estatura + "\n"
+28. contador <-- contador + 1
+29. Escribir "Si desea terminar con el programa presione s de lo contrario n." 
+30. Imprimir opcion
+31. Si opcion == "s" entonces
+32. bandera <-- false
+33. Fin Si
+34. Fin Mientras
+35. promedioEdad <-- totalEdad/contador
+36. promedioEstatura <--totalEstatura/contador
+37. Escribir "Listado de Jugadores\n" + mensaje + "Promedio de edades: " + promedioEdad + "\n" + "Promedio de estaturas: " + promedioEstatura
+38. Fin

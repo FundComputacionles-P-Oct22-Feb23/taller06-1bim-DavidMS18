@@ -1,0 +1,11 @@
+1. Inicio
+2. contador, i[0,n] <-- 5
+3. cantidad, i[0,n] <-- 10
+
+4. Mientras contador <= 6 entonces 
+5.   Escribir contador + "/" + cantidad
+6. contador <-- contador +5
+7. cantidad <-- cantidad +2
+
+8.FinMientras
+9.Fin

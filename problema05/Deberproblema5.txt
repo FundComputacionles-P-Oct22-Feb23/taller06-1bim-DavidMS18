@@ -1,0 +1,22 @@
+1. Incio
+2. nombreEstudiante, x(20) [{a-z},{A-Z}, {BS}]
+3. promedioCiclo, d[0,n]
+4. cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}] <-- ""
+5. contador, d[0,n] <-- 1
+6. resgistro, , x(10) [{a-z},{A-Z}, {BS}]
+
+7.  Mientras contador <= 5 entonces
+8.     Escribir "Ingrese el nombre del estudiante:"
+9.     Lea nombreEstudiante
+10.    Escribir "Ingrese el promedio del estudiante:"
+11.    Lea promedioCiclo
+12. Si promedioCiclo >=7 entonces 
+13.    registro <-- "Aprobado"
+14. De lo contrario
+15.    registro  <-- "Reprobado"
+16.    cadenaFinal <-- cadenaFinal + nombre + "\t" + contador + "\t" + promedioCiclo 
+                     + resgistro + "\n"
+17.    contador <-- contador + 1
+18. Fin Mientras
+19. Imprimir cadenaFinal
+20. Fin

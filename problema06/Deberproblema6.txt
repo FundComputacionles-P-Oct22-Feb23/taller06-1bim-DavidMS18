@@ -1,0 +1,32 @@
+1. Inicio
+2. nombreCliente, x(200)[{a-z},{A-Z},{BS}]
+3. costopc, d[0,n]
+4. tipoCliente, i[0,n]
+5. descuento, d[0,n]
+6. valorTotal, d[0,n]
+7. contador, i[0,n] <-- 1
+8. cadenaFinal, x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}] <-- ""
+
+9. Mientras contador <=7 entonces 
+10.   Escribir "Ingrese su nombre:"
+11.   Imprimir nombreCliente
+12.   Escribir "Ingresar costo de la computadora:"
+13.   costopc
+14.   Escribir "Ingresar tipo de cliente:"
+15.   tipoCliente
+16.   Si tipoCliente == 1 entonces 
+17.   descuento <-- (costopc * 10)/100
+18.   De lo contrario 
+19.   Si tipoCliente == 2 entonces
+20.   descuento <-- (costopc * 20)/100
+21.   De lo contrario
+22.   descuento <-- 0
+23.   FinSi
+24.   FinSi
+25.   valorTotal <-- (costopc - descuento)
+25.   cadenaFinal <-- cadenaFinal + "El cliente es de tipo" + tipoCliente + " " 
+                     + "adquiere un computador con el precio" + valorTotal + "\n"
+26.   contador <-- contador + 1
+29.  FinMientras
+30.  cadenaFinal
+31. Fin
